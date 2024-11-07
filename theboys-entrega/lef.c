@@ -90,8 +90,8 @@ int insere_lef (struct lef_t *l, struct evento_t *e){
 	//inserir caso não haja elementos ou caso o tempo 
 	//do evento seja menor que o tempo do primeiro evento
 	if(!l->primeiro || e->tempo < aux->evento->tempo){	
-        nodo->prox = l->primeiro;
-        l->primeiro = nodo;
+        	nodo->prox = l->primeiro;
+        	l->primeiro = nodo;
 	}else{	
 		//enquanto houver nodo e o tempo do evento a ser inserido
 		//for maior que o tempo 
